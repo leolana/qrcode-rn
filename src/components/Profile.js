@@ -17,7 +17,7 @@ const Profile = ({ member, logout }) => (
               <Content padder>
                 <Header
                   title={`Hi ${member.firstName},`}
-                  content={`You are currently logged in as ${member.email}`}
+                  content={`Você está logado como ${member.email}`}
                 />
               </Content>
 
@@ -27,7 +27,7 @@ const Profile = ({ member, logout }) => (
                 </Left>
                 <Body>
                   <Text>
-                    Update My Profile
+                    Atualizar meu perfil
                   </Text>
                 </Body>
               </ListItem>
@@ -37,7 +37,7 @@ const Profile = ({ member, logout }) => (
                 </Left>
                 <Body>
                   <Text>
-                    Logout
+                    Sair
                   </Text>
                 </Body>
               </ListItem>
@@ -47,8 +47,8 @@ const Profile = ({ member, logout }) => (
             <View>
               <Content padder>
                 <Header
-                  title="Hi there,"
-                  content="Please login to gain extra access"
+                  title="Oi de novo,"
+                  content="Por favor se logue para ganhar pontuação extra"
                 />
               </Content>
 
@@ -58,7 +58,7 @@ const Profile = ({ member, logout }) => (
                 </Left>
                 <Body>
                   <Text>
-                    Login
+                    Entrar
                   </Text>
                 </Body>
               </ListItem>
@@ -68,7 +68,7 @@ const Profile = ({ member, logout }) => (
                 </Left>
                 <Body>
                   <Text>
-                    Sign Up
+                    Cadastrar-se
                   </Text>
                 </Body>
               </ListItem>
@@ -78,7 +78,7 @@ const Profile = ({ member, logout }) => (
                 </Left>
                 <Body>
                   <Text>
-                    Forgot Password
+                    Esqueceu sua senha?
                   </Text>
                 </Body>
               </ListItem>
@@ -91,7 +91,7 @@ const Profile = ({ member, logout }) => (
           </Left>
           <Body>
             <Text>
-              Change Language
+              Alterar idioma
             </Text>
           </Body>
         </ListItem>

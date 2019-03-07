@@ -58,8 +58,8 @@ class ForgotPassword extends React.Component {
       <Container>
         <Content padder>
           <Header
-            title="Reset your Password"
-            content="No stress, no stress. We'll get you back into your account."
+            title="Esqueceu sua senha"
+            content="Sem stress. Nós iremos obter de volta a sua conta."
           />
 
           {error && <Messages message={error} />}
@@ -81,7 +81,7 @@ class ForgotPassword extends React.Component {
 
             <Button block onPress={this.handleSubmit}>
               <Text>
-                Reset Password
+                Esqueceu sua senha?
               </Text>
             </Button>
           </Form>

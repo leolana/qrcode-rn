@@ -53,7 +53,7 @@ const RecipeView = ({
           {recipe.title}
         </H3>
         <Text>
-          by
+          por
           {' '}
           {recipe.author}
         </Text>
@@ -62,7 +62,7 @@ const RecipeView = ({
         <Card>
           <CardItem header bordered>
             <Text>
-              About this recipe
+              Sobre esta receita
             </Text>
           </CardItem>
           <CardItem>

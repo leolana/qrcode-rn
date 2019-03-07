@@ -23,8 +23,8 @@ Error.propTypes = {
 };
 
 Error.defaultProps = {
-  title: 'Uh oh',
-  content: 'An unexpected error came up',
+  title: 'Ops',
+  content: 'Um erro inesperado acabou de acontecer',
 };
 
 export default Error;

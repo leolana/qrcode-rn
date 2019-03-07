@@ -156,7 +156,7 @@ export function resetPassword(formData) {
     // Go to Firebase
     return Firebase.auth()
       .sendPasswordResetEmail(email)
-      .then(() => statusMessage(dispatch, 'success', 'We have emailed you a reset link').then(resolve(dispatch({ type: 'USER_RESET' }))))
+      .then(() => statusMessage(dispatch, 'success', 'Nós enviamos um link de redefinição para você').then(resolve(dispatch({ type: 'USER_RESET' }))))
       .catch(reject);
   }).catch(async (err) => {
     await statusMessage(dispatch, 'loading', false);
@@ -213,7 +213,7 @@ export function updateProfile(formData) {
         // Update Redux
         await getUserData(dispatch);
         await statusMessage(dispatch, 'loading', false);
-        return resolve('Profile Updated');
+        return resolve('Perfil atualizado :)');
       }).catch(reject);
   }).catch(async (err) => {
     await statusMessage(dispatch, 'loading', false);

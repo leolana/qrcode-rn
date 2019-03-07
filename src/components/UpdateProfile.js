@@ -51,7 +51,7 @@ class UpdateProfile extends React.Component {
   handleSubmit = () => {
     const { onFormSubmit } = this.props;
     onFormSubmit(this.state)
-      .then(() => console.log('Profile Updated'))
+      .then(() => console.log('Perfil atualizado'))
       .catch(e => console.log(`Error: ${e}`));
   }
 
@@ -72,8 +72,8 @@ class UpdateProfile extends React.Component {
       <Container>
         <Content padder>
           <Header
-            title="Update my profile"
-            content="Thanks for keeping your account up to date!"
+            title="Atualizar meu perfil"
+            content="Obrigado por manter as suas informações atualizadas!"
           />
 
           {error && <Messages message={error} />}
@@ -82,7 +82,7 @@ class UpdateProfile extends React.Component {
           <Form>
             <Item stackedLabel>
               <Label>
-                First Name
+                Primeiro Nome
               </Label>
               <Input
                 value={firstName}
@@ -92,7 +92,7 @@ class UpdateProfile extends React.Component {
 
             <Item stackedLabel>
               <Label>
-                Last Name
+                Sobrenome
               </Label>
               <Input
                 value={lastName}
@@ -107,7 +107,7 @@ class UpdateProfile extends React.Component {
               />
               <Body>
                 <Text>
-                  Change Email
+                  Alterar Email
                 </Text>
               </Body>
             </ListItem>
@@ -135,7 +135,7 @@ class UpdateProfile extends React.Component {
               />
               <Body>
                 <Text>
-                  Change Password
+                  Alterar senha
                 </Text>
               </Body>
             </ListItem>
@@ -145,14 +145,14 @@ class UpdateProfile extends React.Component {
               <View padder>
                 <Item stackedLabel>
                   <Label>
-                    Password
+                    Senha
                   </Label>
                   <Input secureTextEntry onChangeText={v => this.handleChange('password', v)} />
                 </Item>
 
                 <Item stackedLabel last>
                   <Label>
-                    Confirm Password
+                    Confirmar a senha
                   </Label>
                   <Input secureTextEntry onChangeText={v => this.handleChange('password2', v)} />
                 </Item>
@@ -164,7 +164,7 @@ class UpdateProfile extends React.Component {
 
             <Button block onPress={this.handleSubmit}>
               <Text>
-                Update Profile
+                Atualizar Perfil
               </Text>
             </Button>
           </Form>

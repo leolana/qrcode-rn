@@ -32,11 +32,11 @@ class Locale extends React.Component {
   changeLocale = () => {
     // Form array of possible locales eg. ['en', 'it']
     const options = Object.keys(Translations);
-    options.push('Cancel');
+    options.push('Cancelar');
 
     ActionSheet.show(
       {
-        title: 'Select language',
+        title: 'Selecione o idioma',
         cancelButtonIndex: options.length - 1,
         options,
       },
@@ -57,7 +57,7 @@ class Locale extends React.Component {
       <Container>
         <Content padder>
           <Header
-            title="Change language"
+            title="Alterar idioma"
             content=""
           />
 

@@ -56,8 +56,8 @@ class SignUp extends React.Component {
       <Container>
         <Content padder>
           <Header
-            title="Welcome"
-            content="We're glad to welcome you to the community. There's only a few questions and you'll be on your way."
+            title="Bem-vindo"
+            content="Pedimos abaixo algumas informações para criarmos o seu acesso"
           />
 
           {error && <Messages message={error} />}
@@ -65,14 +65,14 @@ class SignUp extends React.Component {
           <Form>
             <Item stackedLabel>
               <Label>
-                First Name
+                Primeiro Nome
               </Label>
               <Input onChangeText={v => this.handleChange('firstName', v)} />
             </Item>
 
             <Item stackedLabel>
               <Label>
-                Last Name
+                Sobrenome
               </Label>
               <Input onChangeText={v => this.handleChange('lastName', v)} />
             </Item>
@@ -90,14 +90,14 @@ class SignUp extends React.Component {
 
             <Item stackedLabel>
               <Label>
-                Password
+                Senha
               </Label>
               <Input secureTextEntry onChangeText={v => this.handleChange('password', v)} />
             </Item>
 
             <Item stackedLabel>
               <Label>
-                Confirm Password
+                Confirme a senha
               </Label>
               <Input secureTextEntry onChangeText={v => this.handleChange('password2', v)} />
             </Item>
@@ -106,7 +106,7 @@ class SignUp extends React.Component {
 
             <Button block onPress={this.handleSubmit}>
               <Text>
-                Sign Up
+                Cadastrar-se
               </Text>
             </Button>
           </Form>

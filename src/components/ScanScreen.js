@@ -75,9 +75,9 @@ export default class ScanScreen extends Component {
   render() {
     const { hasCameraPermission } = this.state;
     const element = hasCameraPermission === null
-      ? <Text>Requesting for camera permission</Text>
+      ? <Text>Precisamos que você dê permissão para acessarmos a sua camera</Text>
       : hasCameraPermission === false
-        ? <Text>Camera permission is not granted</Text>
+        ? <Text>Permissão para acessar a Camera negada</Text>
         : (
           <BarCodeScanner
             onBarCodeRead={this._handleBarCodeRead}

@@ -1,11 +1,11 @@
 import english from './en';
-import italian from './it';
+import portuguese from './pt';
 
 export const DEFAULT_LOCALE = 'en';
 
 export const Translations = {
   en: english,
-  it: italian,
+  pt: portuguese,
 };
 
 export function translate(message, locale = DEFAULT_LOCALE) {

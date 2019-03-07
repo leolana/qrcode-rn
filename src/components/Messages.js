@@ -24,7 +24,7 @@ Messages.propTypes = {
 };
 
 Messages.defaultProps = {
-  message: 'An unexpected error came up',
+  message: 'Um erro inesperado acabou de acontecer ;(',
   type: 'error',
 };
 
