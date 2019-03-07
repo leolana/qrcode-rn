@@ -10,9 +10,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/images/app-icon.png",
+    "icon": "./public/images/app-icon.png",
     "splash": {
-      "image": "./src/images/launch.png",
+      "image": "./public/images/launch.png",
       "resizeMode": "contain",
       "backgroundColor": "#473be7"
     },

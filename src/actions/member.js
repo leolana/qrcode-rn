@@ -117,11 +117,11 @@ export function login(formData) {
             });
 
             // Send verification Email when email hasn't been verified
-            if (userDetails.emailVerified === false) {
-              Firebase.auth().currentUser
-                .sendEmailVerification()
-                .catch(() => console.log('Verification email failed to send'));
-            }
+            // if (userDetails.emailVerified === false) {
+            //   Firebase.auth().currentUser
+            //     .sendEmailVerification()
+            //     .catch(() => console.log('Verification email failed to send'));
+            // }
 
             // Get User Data
             getUserData(dispatch);
