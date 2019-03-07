@@ -31,7 +31,7 @@ const Profile = ({ member, logout }) => (
                   </Text>
                 </Body>
               </ListItem>
-              <ListItem onPress={logout} icon>
+              <ListItem onPress={() => logout().then(() => Actions.login())} icon>
                 <Left>
                   <Icon name="power" />
                 </Left>

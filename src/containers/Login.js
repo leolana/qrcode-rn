@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Actions } from 'react-native-router-flux';
+import { Actions, ActionConst } from 'react-native-router-flux';
 
 import { login } from '../actions/member';
 
@@ -26,6 +26,9 @@ class Login extends Component {
   onFormSubmit = (data) => {
     const { onFormSubmit } = this.props;
     return onFormSubmit(data)
+      .then(() => {
+        Actions.tabbar({ type: ActionConst.RESET });
+      })
       .catch((err) => { this.setState({ errorMessage: err }); throw err; });
   }
 
