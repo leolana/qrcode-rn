@@ -26,9 +26,6 @@ class Login extends Component {
   onFormSubmit = (data) => {
     const { onFormSubmit } = this.props;
     return onFormSubmit(data)
-      .then(() => {
-        Actions.homeLogged();
-      })
       .catch((err) => { this.setState({ errorMessage: err }); throw err; });
   }
 

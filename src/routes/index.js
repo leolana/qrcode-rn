@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Scene,
-  Tabs,
-  Stack,
-  Actions,
-} from 'react-native-router-flux';
+import { Scene, Tabs, Stack } from 'react-native-router-flux';
 import { Icon } from 'native-base';
 
 import DefaultProps from '../constants/navigation';
@@ -34,53 +29,9 @@ import ProfileComponent from '../components/Profile';
 
 import AboutComponent from '../components/About';
 
-const AppNavigator = Actions.create(
-  <Scene
-    key="root"
-    hideNavBar
-  >
-
-    <Scene
-      back
-      key="login"
-      title="LOGIN"
-      {...DefaultProps.navbarProps}
-      component={LoginContainer}
-      Layout={LoginComponent}
-    />
-
-    <Scene
-      back
-      key="signUp"
-      title="SIGN UP"
-      {...DefaultProps.navbarProps}
-      component={SignUpContainer}
-      Layout={SignUpComponent}
-    />
-
-    <Scene
-      back
-      key="forgotPassword"
-      title="FORGOT PASSWORD"
-      {...DefaultProps.navbarProps}
-      component={ForgotPasswordContainer}
-      Layout={ForgotPasswordComponent}
-    />
-
-    <Scene
-      back
-      clone
-      key="recipe"
-      title="RECIPE"
-      {...DefaultProps.navbarProps}
-      component={RecipesContainer}
-      Layout={RecipeViewComponent}
-    />
-
-    <Scene
-      key="homeLogged"
-      hideNavBar
-    >
+const Index = (
+  <Stack hideNavBar>
+    <Scene hideNavBar>
       <Tabs
         key="tabbar"
         swipeEnabled
@@ -136,7 +87,43 @@ const AppNavigator = Actions.create(
       </Tabs>
     </Scene>
 
-  </Scene>,
+    <Scene
+      back
+      key="signUp"
+      title="SIGN UP"
+      {...DefaultProps.navbarProps}
+      component={SignUpContainer}
+      Layout={SignUpComponent}
+    />
+
+    <Scene
+      back
+      key="login"
+      title="LOGIN"
+      {...DefaultProps.navbarProps}
+      component={LoginContainer}
+      Layout={LoginComponent}
+    />
+
+    <Scene
+      back
+      key="forgotPassword"
+      title="FORGOT PASSWORD"
+      {...DefaultProps.navbarProps}
+      component={ForgotPasswordContainer}
+      Layout={ForgotPasswordComponent}
+    />
+
+    <Scene
+      back
+      clone
+      key="recipe"
+      title="RECIPE"
+      {...DefaultProps.navbarProps}
+      component={RecipesContainer}
+      Layout={RecipeViewComponent}
+    />
+  </Stack>
 );
 
-export default AppNavigator;
+export default Index;
