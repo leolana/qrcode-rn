@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Container, Content, Form, Item, Label, Input, Text, Button, View,
+  List, ListItem, Body, Left, Icon,
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import Loading from './Loading';
@@ -108,6 +109,30 @@ class Login extends React.Component {
               </Button>
             </View>
           </Form>
+
+          <List>
+            <ListItem onPress={Actions.signUp} icon>
+              <Left>
+                <Icon name="add-circle" />
+              </Left>
+              <Body>
+                <Text>
+                  Cadastrar-se
+                </Text>
+              </Body>
+            </ListItem>
+            <ListItem onPress={Actions.forgotPassword} icon>
+              <Left>
+                <Icon name="help-buoy" />
+              </Left>
+              <Body>
+                <Text>
+                  Esqueceu sua senha?
+                </Text>
+              </Body>
+            </ListItem>
+          </List>
+
         </Content>
       </Container>
     );

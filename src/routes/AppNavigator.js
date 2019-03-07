@@ -1,5 +1,10 @@
 import React from 'react';
-import { Router, Scene, Stack, Tabs } from 'react-native-router-flux';
+import {
+  Router,
+  Scene,
+  Stack,
+  Tabs,
+} from 'react-native-router-flux';
 import { Icon } from 'native-base';
 
 import DefaultProps from '../constants/navigation';
@@ -89,7 +94,7 @@ const AppNavigator = (
           <Stack
             hideNavBar
             title={AppConfig.appName.toUpperCase()}
-            icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+            icon={() => <Icon name="camera" {...DefaultProps.icons} />}
             {...DefaultProps.navbarProps}
           >
             <Scene key="home" component={ScanScreen} />
