@@ -28,7 +28,7 @@ import UpdateProfileComponent from '../components/UpdateProfile';
 import MemberContainer from '../containers/Member';
 import ProfileComponent from '../components/Profile';
 
-import AboutComponent from '../components/About';
+import ScanScreen from '../components/ScanScreen';
 
 const AppNavigator = (
   <Router>
@@ -92,7 +92,7 @@ const AppNavigator = (
             icon={() => <Icon name="planet" {...DefaultProps.icons} />}
             {...DefaultProps.navbarProps}
           >
-            <Scene key="home" component={AboutComponent} />
+            <Scene key="home" component={ScanScreen} />
           </Stack>
 
           <Stack
