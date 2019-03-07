@@ -32,8 +32,8 @@ const RecipeListing = ({
     <Container>
       <Content padder>
         <Header
-          title="Top Recipes"
-          content="This is here to show how you can read and display data from a data source (in our case, Firebase)."
+          title="Top Artigos"
+          content="Exemplo de como você pode ler e exibir informações do Firebase."
         />
 
         <FlatList
@@ -68,7 +68,7 @@ const RecipeListing = ({
                     onPress={() => onPress(item)}
                   >
                     <Text>
-                      View Recipe
+                      Ver Artigo
                     </Text>
                   </Button>
                   <Spacer size={5} />

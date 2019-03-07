@@ -62,7 +62,7 @@ const RecipeView = ({
         <Card>
           <CardItem header bordered>
             <Text>
-              Sobre esta receita
+              Sobre esta notícia
             </Text>
           </CardItem>
           <CardItem>
@@ -77,7 +77,7 @@ const RecipeView = ({
         <Card>
           <CardItem header bordered>
             <Text>
-              Ingredients
+              Novidades
             </Text>
           </CardItem>
           <CardItem>
@@ -92,7 +92,7 @@ const RecipeView = ({
         <Card>
           <CardItem header bordered>
             <Text>
-              Method
+              Descrição
             </Text>
           </CardItem>
           <CardItem>
